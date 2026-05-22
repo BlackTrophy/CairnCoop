@@ -1,0 +1,39 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# BepInEx interop DLLs (generated at runtime, NOT redistributable — game files)
+BepInEx/
+!BepInEx/.gitkeep
+
+# Game-owned DLLs that cannot be redistributed
+stubs/generated/
+
+# Rider / VS / VSCode
+.idea/
+*.DotSettings.user
+.vscode/
+*.code-workspace
+
+# Temp
+*.tmp
+*.bak
+*.orig
+
+# Join code (contains personal SteamID — never commit)
+installer/join_code.txt
+**/join_code.txt
+
+# Release zips
+*.zip
+releases/
+
+# NuGet
+packages/
+*.nupkg
+
+# macOS
+.DS_Store
